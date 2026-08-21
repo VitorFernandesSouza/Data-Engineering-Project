@@ -306,13 +306,87 @@ facilitar futuras análises sobre o negócio.
 
 ------------------------------------------------------------------------
 
-## Resultado
+## Resultados e Insights do Dashboard
 
-O projeto transforma o dataset da Olist em uma estrutura analítica
-organizada, passando por:
+Após a construção da camada analítica, os dados foram disponibilizados no
+Power BI através de dashboards organizados em diferentes perspectivas do
+negócio.
 
-**Fonte → RAW → Transformação → Modelagem → Views → Power BI**
+As análises foram divididas em três principais visões:
 
-Essa abordagem permite que os dados sejam preparados de forma
-estruturada no BigQuery e posteriormente utilizados para geração de
-indicadores e análises no Power BI.
+### Visão Geral de Vendas
+
+Esta visão apresenta os principais indicadores comerciais do e-commerce,
+permitindo acompanhar o desempenho geral das vendas.
+
+Principais indicadores:
+
+- Receita total: **R$ 15,84 milhões**
+- Total de pedidos: **99 mil**
+- Total de itens vendidos: **135 mil**
+- Ticket médio: **R$ 160,58**
+- Frete total: **R$ 2,25 milhões**
+
+Principais análises:
+
+- evolução da receita ao longo do tempo;
+- identificação dos períodos de maior faturamento;
+- análise das categorias de produtos com maior contribuição para receita.
+
+<img width="1344" height="757" alt="image" src="https://github.com/user-attachments/assets/8c63b00b-5df0-4611-8878-bd149a97d715" />
+
+
+
+------------------------------------------------------------------------
+
+### Análise de Clientes e Mercado
+
+Esta visão tem como objetivo entender a distribuição geográfica dos
+clientes e identificar os principais mercados consumidores.
+
+Principais análises:
+
+- receita por estado;
+- concentração de clientes por região;
+- cidades com maior volume de faturamento;
+- comparação entre ticket médio e localização dos clientes.
+
+Insights identificados:
+
+- São Paulo apresenta a maior concentração de receita e clientes;
+- grandes centros urbanos possuem maior participação no faturamento;
+- diferenças de ticket médio indicam comportamentos distintos entre
+  regiões.
+
+
+<img width="1351" height="763" alt="image" src="https://github.com/user-attachments/assets/bdc07de2-ebac-4281-b872-5dc5248284b1" />
+
+
+
+------------------------------------------------------------------------
+
+### Análise de Produtos e Categorias
+
+Esta visão permite avaliar o desempenho do catálogo de produtos e
+identificar quais categorias possuem maior impacto no negócio.
+
+Principais análises:
+
+- receita por categoria;
+- produtos com maior participação nas vendas;
+- comparação entre volume vendido e faturamento;
+- desempenho dos diferentes segmentos de produtos.
+
+Insights identificados:
+
+- algumas categorias possuem maior contribuição financeira mesmo com
+  menor volume de vendas;
+- a análise por categoria permite identificar produtos estratégicos e
+  oportunidades comerciais.
+
+
+<img width="1348" height="760" alt="image" src="https://github.com/user-attachments/assets/20ee9531-bc4f-421c-b46e-5fdcc1643639" />
+
+
+
+------------------------------------------------------------------------
