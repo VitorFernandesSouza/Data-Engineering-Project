@@ -16,18 +16,7 @@ negócio**.
 O fluxo de dados foi estruturado em camadas, separando os dados brutos
 da camada analítica e do consumo no Power BI.
 
-``` mermaid
-flowchart LR
-    A[Dataset Olist] --> B[BigQuery]
-    B --> C[Camada RAW / Bronze]
-    C --> D[Transformações SQL]
-    D --> E[Dimensões]
-    D --> F[Fact Sales]
-    E --> G[Views Analíticas]
-    F --> G
-    G --> H[Power BI]
-    H --> I[Dashboard de E-commerce]
-```
+![alt text](image.png)
 
 ### Fluxo
 
@@ -45,22 +34,13 @@ flowchart LR
 
 ## Tecnologias Utilizadas
 
-  -----------------------------------------------------------------------
-  Tecnologia                          Utilização
-  ----------------------------------- -----------------------------------
-  **Google BigQuery**                 Armazenamento, transformação e
-                                      consulta dos dados
-
-  **SQL**                             Limpeza, transformação e modelagem
-                                      dos dados
-
-  **Power BI**                        Visualização e análise dos
-                                      indicadores
-
-  **Git / GitHub**                    Versionamento do projeto
-
-  **Olist Dataset**                   Fonte dos dados de e-commerce
-  -----------------------------------------------------------------------
+| Tecnologia | Utilização |
+| :--- | :--- |
+| **Google BigQuery** | Armazenamento, transformação e consulta dos dados |
+| **SQL** | Limpeza, transformação e modelagem dos dados |
+| **Power BI** | Visualização e análise dos indicadores |
+| **Git / GitHub** | Versionamento do projeto |
+| **Olist Dataset** | Fonte dos dados de e-commerce |
 
 ------------------------------------------------------------------------
 
@@ -207,19 +187,7 @@ dimensões, disponibilizando uma estrutura mais adequada para consultas
 analíticas e para o Power BI.
 
 Exemplo do fluxo:
-
-``` text
-fact_sales
-     +
-dim_products
-     +
-dim_categories
-     ↓
-vw_sales
-     ↓
-Power BI
-```
-
+![alt text](image-1.png)
 ------------------------------------------------------------------------
 
 ## Tratamento e Transformação
@@ -312,25 +280,7 @@ análise.
 
 O fluxo principal é:
 
-``` text
-Dados brutos
-    ↓
-Ingestão
-    ↓
-RAW / Bronze
-    ↓
-Transformação SQL
-    ↓
-Modelagem dimensional
-    ↓
-Fact + Dimensions
-    ↓
-Views analíticas
-    ↓
-Power BI
-    ↓
-Indicadores e Dashboard
-```
+![alt text](image-2.png)
 
 O resultado é uma arquitetura simples de **Data Warehouse + Analytics**,
 permitindo separar a preparação dos dados da camada de visualização e
