@@ -19,6 +19,13 @@ da camada analítica e do consumo no Power BI.
 <img width="7184" height="780" alt="image" src="https://github.com/user-attachments/assets/10b08170-d48f-442e-a249-870db7234cbf" />
 
 
+## Diagrama do Banco de Dados
+
+Modelo dimensional utilizado no projeto:
+
+<img width="8192" height="7250" alt="image" src="https://github.com/user-attachments/assets/8b9efc5b-3d39-491e-9d4e-2947179e11e4" />
+
+
 ### Fluxo
 
 1.  Os arquivos do dataset Olist são utilizados como fonte de dados.
@@ -448,5 +455,31 @@ Insights identificados:
   <img width="1439" height="801" alt="image" src="https://github.com/user-attachments/assets/8975287c-6ac9-47b2-9a26-7da1f8c4f58c" />
 
 
-
 ------------------------------------------------------------------------
+
+## Interatividade do Dashboard
+
+O dashboard foi desenvolvido com filtros interativos no **Power BI**, permitindo explorar os indicadores de forma dinâmica conforme os critérios selecionados.
+
+Os filtros permitem segmentar as informações por diferentes dimensões, fazendo com que os indicadores, gráficos e demais elementos visuais sejam atualizados automaticamente conforme a seleção do usuário.
+
+Essa abordagem transforma o dashboard em uma interface analítica interativa, permitindo realizar diferentes análises sem a necessidade de executar novas consultas manualmente.
+
+### Filtros e interação
+
+Entre as possibilidades de interação estão filtros relacionados a:
+
+* período;
+* categoria;
+* produto;
+* localização;
+* estado;
+* demais dimensões disponíveis no modelo analítico.
+
+Abaixo, um exemplo da interação dos filtros no dashboard:
+
+
+<img width="652" height="805" alt="image" src="https://github.com/user-attachments/assets/0d6b3914-1178-41fd-926e-e75517af795c" />
+
+
+> Os filtros podem ser utilizados diretamente no dashboard para alterar dinamicamente os dados apresentados nos indicadores e visualizações.
