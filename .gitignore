@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+.env.*
+.ipynb_checkpoints/
+.DS_Store
+
+# Data files (keep folder structure only)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/curated/*
+!data/curated/.gitkeep
+
+# IDE
+.vscode/

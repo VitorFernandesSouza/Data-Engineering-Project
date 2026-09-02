@@ -248,6 +248,66 @@ a:
 
 ## Estrutura do Projeto
 
+A organização foi reorganizada para seguir boas práticas de projetos de dados, com separação clara por responsabilidade e facilidade de manutenção.
+
+```text
+Data Engineering Project/
+├── .gitignore
+├── README.md
+├── requirements.txt
+├── dataset.py
+├── docs/
+├── notebooks/
+├── scripts/
+├── sql/
+│   ├── models/
+│   └── queries/
+├── src/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── etl/
+│   │   ├── __init__.py
+│   │   └── download_dataset.py
+│   ├── pipelines/
+│   │   └── __init__.py
+│   └── utils/
+│       ├── __init__.py
+│       └── file_utils.py
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── curated/
+├── tests/
+└── .venv/ (opcional, quando criado localmente)
+```
+
+### O que mudou
+
+- `src/etl/`: concentra a lógica de extração e ingestão dos dados.
+- `src/pipelines/`: reserva espaço para orquestração e pipelines de transformação.
+- `src/utils/`: funções compartilhadas e utilitárias.
+- `data/`: separa os dados por camada de armazenamento (`raw`, `processed`, `curated`).
+- `sql/`: organiza modelos e consultas SQL de forma estruturada.
+- `docs/`, `notebooks/` e `tests/`: melhoram a documentação, exploração e validação do projeto.
+
+### Boas práticas adotadas
+
+- modularização por responsabilidades;
+- uso de diretórios específicos por camada;
+- entrada centralizada em `dataset.py` para facilitar execução;
+- organização do código para permitir evolução do projeto sem acoplar lógica em um único arquivo;
+- preparação para futuras etapas como transformações, testes automatizados e pipelines em produção.
+
+### Como executar
+
+```bash
+python dataset.py
+```
+
+O script realiza o download do dataset Olist usando a biblioteca `kagglehub` e salva a estrutura no diretório configurado para os dados brutos.
+
+------------------------------------------------------------------------
+
 A organização do projeto separa os recursos de dados, consultas e
 documentação.
 
@@ -333,7 +393,7 @@ Principais análises:
 - identificação dos períodos de maior faturamento;
 - análise das categorias de produtos com maior contribuição para receita.
 
-<img width="1344" height="757" alt="image" src="https://github.com/user-attachments/assets/8c63b00b-5df0-4611-8878-bd149a97d715" />
+![alt text](image-2.png)
 
 
 
@@ -359,7 +419,7 @@ Insights identificados:
   regiões.
 
 
-<img width="1351" height="763" alt="image" src="https://github.com/user-attachments/assets/bdc07de2-ebac-4281-b872-5dc5248284b1" />
+![alt text](image.png)
 
 
 
@@ -385,8 +445,7 @@ Insights identificados:
   oportunidades comerciais.
 
 
-<img width="1348" height="760" alt="image" src="https://github.com/user-attachments/assets/20ee9531-bc4f-421c-b46e-5fdcc1643639" />
-
+![alt text](image-1.png)
 
 
 ------------------------------------------------------------------------
