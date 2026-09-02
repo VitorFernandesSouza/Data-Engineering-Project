@@ -16,7 +16,8 @@ negócio**.
 O fluxo de dados foi estruturado em camadas, separando os dados brutos
 da camada analítica e do consumo no Power BI.
 
-![alt text](image.png)
+<img width="7184" height="780" alt="image" src="https://github.com/user-attachments/assets/10b08170-d48f-442e-a249-870db7234cbf" />
+
 
 ### Fluxo
 
@@ -187,7 +188,8 @@ dimensões, disponibilizando uma estrutura mais adequada para consultas
 analíticas e para o Power BI.
 
 Exemplo do fluxo:
-![alt text](image-1.png)
+<img width="2150" height="1437" alt="image" src="https://github.com/user-attachments/assets/4c833355-1c9b-43b5-a311-ad943bfe4b9b" />
+
 ------------------------------------------------------------------------
 
 ## Tratamento e Transformação
@@ -340,7 +342,7 @@ análise.
 
 O fluxo principal é:
 
-![alt text](image-2.png)
+<img width="8180" height="305" alt="image" src="https://github.com/user-attachments/assets/2d8baba3-951d-4d00-a721-e7f847783980" />
 
 O resultado é uma arquitetura simples de **Data Warehouse + Analytics**,
 permitindo separar a preparação dos dados da camada de visualização e
