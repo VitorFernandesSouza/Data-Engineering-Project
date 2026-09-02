@@ -393,7 +393,7 @@ Principais análises:
 - identificação dos períodos de maior faturamento;
 - análise das categorias de produtos com maior contribuição para receita.
 
-![alt text](image-2.png)
+<img width="1442" height="801" alt="image" src="https://github.com/user-attachments/assets/223c868f-8487-40cf-a878-6618b9c326cb" />
 
 
 
@@ -419,8 +419,7 @@ Insights identificados:
   regiões.
 
 
-![alt text](image.png)
-
+<img width="1409" height="774" alt="image" src="https://github.com/user-attachments/assets/36d4dede-921b-4a19-8972-f8c54ade9582" />
 
 
 ------------------------------------------------------------------------
@@ -444,8 +443,8 @@ Insights identificados:
 - a análise por categoria permite identificar produtos estratégicos e
   oportunidades comerciais.
 
+  <img width="1439" height="801" alt="image" src="https://github.com/user-attachments/assets/8975287c-6ac9-47b2-9a26-7da1f8c4f58c" />
 
-![alt text](image-1.png)
 
 
 ------------------------------------------------------------------------
